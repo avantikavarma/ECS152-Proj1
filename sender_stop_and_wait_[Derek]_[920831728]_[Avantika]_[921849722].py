@@ -10,7 +10,7 @@ SENDER_PORT = 6000         # Local port for sender
 TIMEOUT = 0.5              # Time to wait before retransmitting the ACK 
 
 def main():
-    file_path = "file2.mp3" 
+    file_path = "file.mp3" 
     # Load the file into memory as bytes
     try:
         with open(file_path, "rb") as f:
