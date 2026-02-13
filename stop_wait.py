@@ -80,7 +80,7 @@ def main():
     avg_delay = sum(packet_delays) / len(packet_delays) if packet_delays else 0
     performance_metric = 0.3 * (throughput / 1000) + 0.7 * (1 / avg_delay) if avg_delay > 0 else 0
 
-    # Print only the final results as comma-separated values
+    # Print only the final results 
     print(f"{throughput:.7f}", f"{avg_delay:.7f}", f"{performance_metric:.7f}", sep=", ")
 
 if __name__ == "__main__":
